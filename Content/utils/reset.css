@@ -1,0 +1,48 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td, img, tbody, dt, dd, dl { margin:0; padding:0; } 
+table { border-collapse:collapse; border-spacing:0; } 
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,th,var { font-style:normal; font-weight:normal; } 
+ol,ul { list-style:none; -webkit-padding-start: 0; } 
+caption,th { text-align:left; }
+img { vertical-align:bottom; margin:0; overflow:hidden; background:none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+table td { vertical-align:top; }
+* html li { height:1%; }
+/** utility **/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+/* Hides from IE-mac \*/
+*:first-child+html .clearfix { height: 1%; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+* html .clearfix { display:inline-block; }
+/* End hide from IE-mac */
+input[type=text]::-ms-clear { display: none; }
+.left  { float: left !important; }
+.right { float: right !important; }
+.hide  { display:none !important; }
+.upperCase { text-transform: uppercase; }
+.nobdr { border:none !important; }
+.clear { clear: both; }
+.link{ color:#003658 !important;}
+.align-right { text-align:right !important; }
+.align-left  { text-align:left !important; }
+.align-center { text-align:center !important; }
+.align-top    { vertical-align:top !important; }
+.align-botton { vertical-align:bottom !important; }
+.align-middle { vertical-align:middle !important; }
+.nopdd { padding:0 !important; }
+.nomrg { margin:0 !important; }
+.nopdd-left { padding-left:0 !important; }
+.nopdd-right { padding-right:0 !important; }
+.nopdd-top { padding-top:0 !important; }
+.nopdd-bottom { padding-bottom:0 !important; }
+.underline { text-decoration:underline !important; }
+.width-auto { width: auto !important; }
+.inline { display: inline !important; }
+.inline-block { display: inline-block !important; }
+.block { display: block !important; }
+.bold { font-weight: bold !important; }
+.italic { font-style: italic !important; }
+.red { color:#FF0000 !important;}
+.relative { position: relative !important; }

@@ -1,0 +1,26 @@
+Recursos - v1.0.0 r13252
+************************
+
+Extraido del repositorio
+https://svn.inforfactory.com/projects/unirnet/trunk/RecursosUnir
+
+************************
+
+Version:	1.0.0
+Revision SVN:	13252
+
+************************
+
+Compatible con las siguientes aplicaciones:
+
+- ACTAS
+- AYUDA
+- GP
+- GPS
+- PRACTICUM
+- RECONOCIMIENTOS.GESTION
+- RECONOCIMIENTOS.SOLICITUD
+- SELECCION PERSONAL
+- TRIBUNALES
+- VACACIONES
+- GENERADOR DE ICINETIC

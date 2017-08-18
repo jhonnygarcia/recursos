@@ -1,0 +1,47 @@
+ul.ul-multiselectCombo {
+    padding-left: 0;
+}
+
+div.box-ui-menu-todos {
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+div.box-ui-menu-ninguno {
+    margin-left: 20px;
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+table.multiselectCombo-tooltip-table {
+    font: 10px/14px Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #d8d4dd;
+}
+
+table.multiselectCombo-tooltip-table th {
+    padding: 0px 8px 1px 1px;
+    font: 10px/14px Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    background: #d0dafd;
+    border-top: 2px solid #d8d4dd;
+    border-bottom: 2px solid #d8d4dd;
+    color: #000000;
+}
+
+table.multiselectCombo-tooltip-table td {
+    padding: 0px 8px 0px 1px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #14131D;
+    border-top: 1px solid transparent;
+}
+
+table.multiselectCombo-tooltip-table tr:hover td {
+    background: #d0dafd;
+    color: #000000;
+}

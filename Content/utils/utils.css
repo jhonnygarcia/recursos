@@ -1,0 +1,1247 @@
+/* 
+    Document   : utils
+    Created on : 05-10-2011
+    Author     : johann.cespedes
+    Description:
+        Estilos basicos del template y los componentes utilizados.
+*/
+
+/*************** BEGIN BOX FORM  ***************/
+/*input[type=text].required,
+input[type=password].required {
+    border: 1px solid #fd9393;
+}*/
+
+input[type=text].error,
+input[type=password].error {
+    color: #fd9393;
+}
+
+.box-form {
+    margin: 0;
+    font: normal 11px/20px Arial,Helvetica,sans-serif;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+    .box-form label {
+        line-height: 14px;
+        padding-top: 2px;
+    }
+
+    *:first-child + html .box-form label {
+        line-height: 22px;
+    }
+
+    .box-form .label {
+        overflow: hidden;
+        display: inline-block;
+        margin-right: 10px;
+        font: bold 11px/14px Arial,Helvetica,sans-serif;
+        vertical-align: top;
+        color: #000;
+        padding: 2px 0 0;
+    }
+
+    *:first-child + html .box-form .label {
+        line-height: 18px;
+    }
+
+    .box-form li {
+        margin-bottom: 5px;
+        position: relative;
+        color: #777777;
+        font: normal 11px/20px Arial,Helvetica,sans-serif;
+        margin-right: 10px;
+    }
+
+    .box-form .box-datepicker {
+        margin: 0;
+    }
+
+    .box-form textarea.small {
+        width: 173px;
+    }
+
+    .box-form textarea.medium {
+        width: 474px;
+    }
+
+    .box-form textarea.large {
+        width: 703px;
+    }
+
+    .box-form select.x-small {
+        width: 95px;
+    }
+
+    .box-form select.small {
+        width: 175px;
+    }
+
+    .box-form select.medium {
+        width: 476px;
+    }
+
+    .box-form select.large {
+        width: 705px;
+    }
+
+    .box-form input {
+        vertical-align: top;
+    }
+
+        .box-form input[type=text].large,
+        .box-form input[type=password].large {
+            width: 700px;
+        }
+
+        .box-form input[type=text].medium,
+        .box-form input[type=password].medium {
+            width: 471px;
+        }
+
+        .box-form input[type=text].small,
+        .box-form input[type=password].small {
+            width: 170px;
+        }
+
+        .box-form input[type=text].x-small {
+            width: 90px;
+        }
+
+        .box-form input[type=text].xx-small {
+            width: 65px;
+        }
+
+
+    .box-form .label.large {
+        width: 700px;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .box-form .label.medium {
+        width: 471px;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .box-form .label.small {
+        width: 170px;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .box-form label.large {
+        width: 400px;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .box-form label.medium {
+        width: 200px;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .box-form label.small {
+        width: 100px;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+.ui-tooltip-content .box-form li {
+    line-height: 10px;
+    margin-bottom: 3px;
+}
+
+.ui-tooltip-content .box-form label {
+    font: normal 10px/12px Arial,Helvetica,sans-serif;
+    vertical-align: top;
+    height: 12px;
+}
+
+.ui-tooltip-content .box-form .label {
+    font: normal 10px/12px Arial,Helvetica,sans-serif;
+    white-space: normal;
+}
+
+.ui-dialog {
+    overflow: visible;
+    *zoom: 1;
+}
+
+    .ui-dialog:before,
+    .ui-dialog:after {
+        content: " ";
+        display: table;
+    }
+
+    .ui-dialog:after {
+        clear: both;
+    }
+
+    .ui-dialog .ui-dialog-content.dialog-media {
+        padding: 15px 40px;
+        text-align: center;
+    }
+/*************** BEGIN CLEARFIX ************/
+.block:after,
+.box-border:after,
+.box-fieldset:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+*:first-child + html .block,
+*:first-child + html .box-border,
+*:first-child + html .box-fieldset {
+    height: 1%;
+}
+
+* html .block,
+* html .box-border,
+* html .box-fieldset {
+    height: 1%;
+}
+
+.block,
+.box-border,
+.box-fieldset {
+    display: block;
+}
+
+* html .block,
+* html .box-border,
+* html .box-fieldset {
+    display: inline-block;
+}
+/*************** END CLEARFIX ************/
+
+.block {
+    clear: both;
+}
+
+.box-border,
+.box-fieldset {
+    border: 1px solid #8b8b8b;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    padding: 10px;
+    zoom: 1;
+}
+/*TABS*/
+/*@media screen and (max-width: 600px) {
+
+    .box-border, .box-fieldset {
+        padding: 8px 5px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+}*/
+
+.box-fieldset {
+    position: relative;
+}
+
+    .box-fieldset .field-title {
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        font: bold 13px/16px Arial, Helvetica, sans-serif;
+        background: #eee;
+        color: #003658;
+    }
+/*************** BEGIN BOX DATEPICKER **********/
+.box-datepicker {
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+    .box-datepicker img {
+        position: absolute;
+        right: 7px;
+        top: 2px;
+    }
+
+    .box-datepicker.invalid-date input {
+        background: #f2baba;
+    }
+
+*:first-child + html .box-datepicker {
+    display: inline;
+}
+
+    *:first-child + html .box-datepicker img {
+        right: 13px;
+    }
+
+    *:first-child + html .box-datepicker input {
+        margin-right: 0;
+    }
+/***********************************************/
+
+/*************** BEGIN DIALOG ERRORS **********/
+.list-errors li {
+    margin-bottom: 5px;
+    line-height: 16px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 0 0 0 20px;
+}
+
+    .list-errors li.item-error {
+        background-image: url(images/error.png);
+        font-weight: bold;
+    }
+
+    .list-errors li.item-warning {
+        background-image: url(images/warning.png);
+    }
+
+    .list-errors li.item-message {
+        background-image: url(images/information.png);
+    }
+/***********************************************/
+
+/*************** BEGIN BOX COMBOBOX ************/
+.box-combobox {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #8B8B8B;
+    background-color: #FFFFFF;
+    padding: 0 20px 0 0;
+    margin-right: 5px;
+    height: 17px;
+}
+
+    .box-combobox .overlabel-apply {
+        position: absolute;
+        top: 2px;
+        left: 4px;
+        font-style: italic;
+        padding: 0;
+    }
+
+    *:first-child + html .box-combobox .overlabel-apply {
+        line-height: 14px;
+    }
+
+    .box-combobox .overlabel {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        font: italic 11px/12px Arial,Helvetica,sans-serif;
+        white-space: nowrap;
+    }
+
+    .box-combobox .ui-autocomplete-input {
+        border: none;
+        margin: 0;
+        height: 17px;
+        vertical-align: top;
+    }
+
+    .box-combobox .ui-box-message-loading {
+        position: absolute;
+        top: 2px;
+        right: 22px;
+    }
+
+        .box-combobox .ui-box-message-loading img {
+            vertical-align: top;
+        }
+
+*:first-child + html .box-combobox {
+    display: inline;
+    padding-right: 10px;
+}
+
+    *:first-child + html .box-combobox .overlabel-apply {
+        top: 1px;
+    }
+
+    *:first-child + html .box-combobox input[type=text] {
+        vertical-align: top;
+        height: 16px;
+    }
+
+    .box-combobox .ui-button {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        cursor: default;
+        height: 15px;
+        width: 18px;
+        display: block;
+        margin-right: 1px;
+    }
+
+        .box-combobox .ui-button.btn-combobox-search {
+            right: 20px;
+        }
+
+    .box-combobox.box-combobox-searcher .btn-combobox-search {
+        right: 0;
+    }
+
+    .box-combobox .box-combobox-toolbar {
+        right: -20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+        .box-combobox .box-combobox-toolbar .ui-icon {
+            float: left;
+            cursor: pointer;
+        }
+
+.combobox-text-readonly {
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    font: bold 11px/14px Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.box-combobox input[type=text].large {
+    width: 702px;
+}
+
+.box-combobox input[type=text].medium {
+    width: 451px;
+}
+
+.box-combobox input[type=text].small {
+    width: 150px;
+}
+
+.box-combobox input[type=text].x-small {
+    width: 70px;
+}
+
+table .box-combobox .ui-button {
+    height: 12px;
+    width: 16px;
+}
+
+table .box-combobox {
+    height: 14px;
+}
+
+    table .box-combobox input[type=text] {
+        height: 14px;
+        font-size: 10px;
+    }
+
+*:first-child + html .box-combobox input[type=text] {
+    height: 12px;
+    line-height: 12px;
+}
+
+table .box-combobox .overlabel-apply {
+    top: 0;
+    font-size: 10px;
+}
+
+.ui-autocomplete {
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*padding-right: 20px;*/
+    width: 300px;
+}
+
+    .ui-autocomplete .ui-menu-item a {
+        text-decoration: none;
+    }
+
+    .ui-autocomplete .item-pageable {
+        background: none;
+        border: 1px solid transparent;
+        margin: 0;
+		padding-right:1px !important;
+    }
+
+* html .ui-autocomplete {
+    height: 200px;
+}
+
+table input[type=text].xx-small {
+    width: 45px;
+}
+/***********************************************/
+
+/*************** BEGIN BOX LEGEND **************/
+ul.list-legend .item {
+    width: 50px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+ul.list-legend li {
+    color: #000000;
+    margin-bottom: 2px;
+    float: left;
+    font: normal 12px/18px Arial,Helvetica,sans-serif;
+}
+/***********************************************/
+
+/*************** BEGIN BUTTONS *****************/
+.box-buttons:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+*:first-child + html .box-buttons {
+    height: 1%;
+}
+
+* html .box-buttons {
+    height: 1%;
+}
+
+.box-buttons {
+    display: block;
+    margin-bottom: 10px;
+}
+
+* html .box-buttons {
+    display: inline-block;
+}
+
+#main-wrapper .button.disabled,
+#main-wrapper .button-back.disabled {
+    opacity: 0.35;
+    filter: Alpha(Opacity=35);
+    cursor: default;
+}
+/***********************************************/
+
+/*************** BEGIN MENU MAIN ***************/
+#main-menu {
+    font-weight: bold;
+    position: relative;
+    background: url("jqueryui/images/ui-bg_highlight-soft_75_003658_1x100.png") repeat-x scroll 50% 50% #1b577e;
+}
+
+    #main-menu li {
+        float: left;
+    }
+
+        #main-menu li:last-child {
+            margin-right: 0;
+        }
+
+    #main-menu a:hover, .menu .current-item a {
+        text-decoration: none;
+    }
+
+.toggle-menu {
+    display: none;
+}
+
+/*----- Menu -----*/
+@media screen and (min-width: 720px) {
+    #main-menu ul li a,
+    #main-menu ul li span {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+        white-space: nowrap;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-bottom: none;
+    }
+
+    #main-menu li span > label {
+        display: none;
+    }
+
+    #main-menu ul li ul li {
+        width: 100%;
+    }
+
+    #main-menu ul li {
+        position: relative;
+        color: #FFFFFF;
+        float: left;
+        border: none;
+        z-index: 1;
+    }
+
+    #main-menu ul > li:hover ul {
+        display: block;
+    }
+
+    #main-menu ul li a:hover,
+    #main-menu ul li.current > a,
+    #main-menu ul li span:hover {
+        text-decoration: none;
+        border: 1px solid #C4C4C4;
+        border-bottom: none;
+        background: #003658;
+        color: #fff;
+    }
+
+    #main-menu ul li ul {
+        position: absolute;
+        top: 26px;
+        left: 0;
+        display: none;
+        background-color: #364251;
+    }
+}
+
+/*----- Responsive -----*/
+
+@media screen and (max-width: 820px) {
+    #main-menu {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+        #main-menu li.item-menu {
+            float: none !important;
+            display: block;
+        }
+
+        #main-menu ul.active {
+            display: none;
+        }
+
+        #main-menu > ul {
+            position: absolute;
+            top: 110%;
+            right: 0;
+            background: #fff;
+            z-index: 1;
+        }
+
+        #main-menu li {
+            float: none;
+            display: block;
+            border-bottom: 1px solid #8b8b8b;
+        }
+
+        #main-menu ul li a, #main-menu ul li span {
+            padding: 10px 18px;
+            display: block;
+        }
+
+        #main-menu li span > label {
+            display: block;
+        }
+
+        #main-menu ul a, #main-menu ul li {
+            background: #fff;
+            color: #003658;
+            cursor: pointer;
+        }
+
+            #main-menu ul a:hover, #main-menu ul span:hover {
+                background: #003658;
+                color: #fff;
+                cursor: pointer;
+            }
+
+        #main-menu ul > li ul li a, #main-menu ul > li ul li span {
+            text-transform: none;
+        }
+
+        #main-menu ul > li ul {
+            display: none;
+        }
+
+        #main-menu > ul li a, #main-menu > ul li span {
+            text-transform: uppercase;
+        }
+
+        #main-menu ul span > label {
+            background-image: url("jqueryui/images/ui-icons_222222_256x240.png");
+        }
+
+        #main-menu ul span:hover > label {
+            background-image: url("jqueryui/images/ui-icons_ffffff_256x240.png");
+        }
+
+        #main-menu > ul li ul li {
+            border-bottom: none;
+        }
+
+    .toggle-menu {
+        padding: 8px;
+        padding-right: 12px;
+        float: right;
+        display: inline-block;
+        color: #777;
+        font-size: 20px;
+    }
+
+        .toggle-menu:hover, .toggle-menu.active {
+            text-decoration: none;
+        }
+}
+
+/******************************************************************************/
+/* overlabel */
+.box-overlabel {
+    position: relative;
+    display: inline-block;
+}
+
+.overlabel {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    font: italic 11px/12px Arial,Helvetica,sans-serif;
+    font: italic 11px/12px Arial,Helvetica,sans-serif;
+    white-space: nowrap;
+    color: #777;
+}
+
+*:first-child + html .overlabel {
+    line-height: 14px !important;
+}
+/******************************************************************************/
+.legend {
+    font-style: italic;
+}
+/******************************************************************************/
+.box-error {
+    padding: 10px 10px 5px;
+    margin-bottom: 10px;
+}
+/******************************************************************************/
+/* SPINNER */
+.ui-spinner {
+    position: relative;
+    border-radius: 0;
+}
+
+    .ui-spinner .ui-spinner-input {
+        border: none;
+    }
+
+.ui-spinner-buttons {
+    position: absolute;
+}
+
+.ui-spinner-button {
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.ui-spinner.ui-widget-content {
+    margin-right: 5px;
+}
+/* CONTEXT MENU */
+/* all context menus have this class */
+.context-menu-target {
+    background: transparent url('images/arrow-menu-context.gif') no-repeat right bottom;
+    padding-right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    .context-menu-target:hover {
+        text-decoration: none;
+    }
+
+.context-menu {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #999;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .context-menu li {
+        margin: 0;
+    }
+
+    .context-menu a {
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .context-menu a:hover {
+            background-color: #666;
+            color: white;
+            text-decoration: none;
+        }
+
+    .context-menu li.item-separator {
+        height: 1px;
+        background: black;
+    }
+/******************************************************************************/
+/*DATATABLE COLVIS - COLUMNAS VISIBLES*/
+.ColVis {
+    float: right;
+}
+
+.ColVis_Button {
+    position: relative;
+    float: left;
+    margin-right: 3px;
+    padding: 3px 5px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    *cursor: hand;
+}
+
+button.ColVis_Button::-moz-focus-inner {
+    border: none !important;
+    padding: 0;
+}
+
+.ColVis_text_hover {
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+}
+
+div.ColVis_collectionBackground {
+    background-color: black;
+    z-index: 1100;
+}
+
+div.ColVis_collection {
+    position: relative;
+    width: 150px;
+    background-color: #f3f3f3;
+    padding: 3px;
+    border: 1px solid #ccc;
+    z-index: 1102;
+}
+
+    div.ColVis_collection button.ColVis_Button {
+        background-color: white;
+        width: 100%;
+        float: none;
+        margin-bottom: 2px;
+        background-image: none;
+        color: black;
+    }
+
+        div.ColVis_collection button.ColVis_Button .ColVis_title {
+            display: inline-block;
+        }
+
+            div.ColVis_collection button.ColVis_Button .ColVis_title .ui-icon {
+                background-color: #003658;
+            }
+
+div.ColVis_catcher {
+    position: absolute;
+    z-index: 1101;
+}
+
+.disabled {
+    color: #999;
+}
+
+button.ColVis_Button {
+    text-align: left;
+}
+
+div.ColVis_collection button.ColVis_Button:hover {
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+}
+
+span.ColVis_radio {
+    display: inline-block;
+    width: 20px;
+}
+/******************************************************************************/
+/*Componente de Multiseleccion*/
+
+.box-multiselection {
+    display: inline-block;
+}
+
+    .box-multiselection .box-multiselection-toggle.btn-multiselection {
+        width: 18px;
+        height: 16px;
+    }
+
+    .box-multiselection .item-selected {
+        border: 1px solid #555;
+        padding: 0 20px 0 3px;
+        display: inline-block;
+        height: 17px;
+        margin-right: 5px;
+        position: relative;
+        background: #fff;
+    }
+
+        .box-multiselection .item-selected .btn-delete {
+            height: 15px;
+            width: 16px;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            margin-right: 0;
+        }
+
+.dialog-multiselection ul li {
+    float: left;
+    width: 47%;
+    background: none;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    padding: 5px;
+}
+
+    .dialog-multiselection ul li input {
+        margin-right: 5px;
+    }
+
+    .dialog-multiselection ul li label {
+        display: inline;
+    }
+
+    .dialog-multiselection ul li.hover,
+    .dialog-multiselection ul li.selected {
+        background: #F0F0F0;
+    }
+/******************************************************************************/
+/* APP RESPONSIVE DESIGN & ADAPT*/
+.grid-container input[type="text"], input[type="password"] {
+    height: 19px;
+}
+
+.box-datepicker.grid-5, .box-datepicker.mobile-grid-5,
+.box-datepicker.grid-10, .box-datepicker.mobile-grid-10,
+.box-datepicker.grid-15, .box-datepicker.mobile-grid-15,
+.box-datepicker.grid-20, .box-datepicker.mobile-grid-20,
+.box-datepicker.grid-25, .box-datepicker.mobile-grid-25,
+.box-datepicker.grid-30, .box-datepicker.mobile-grid-30,
+.box-datepicker.grid-35, .box-datepicker.mobile-grid-35,
+.box-datepicker.grid-40, .box-datepicker.mobile-grid-40,
+.box-datepicker.grid-45, .box-datepicker.mobile-grid-45,
+.box-datepicker.grid-50, .box-datepicker.mobile-grid-50,
+.box-datepicker.grid-55, .box-datepicker.mobile-grid-55,
+.box-datepicker.grid-60, .box-datepicker.mobile-grid-60,
+.box-datepicker.grid-65, .box-datepicker.mobile-grid-65,
+.box-datepicker.grid-70, .box-datepicker.mobile-grid-70,
+.box-datepicker.grid-75, .box-datepicker.mobile-grid-75,
+.box-datepicker.grid-80, .box-datepicker.mobile-grid-80,
+.box-datepicker.grid-85, .box-datepicker.mobile-grid-85,
+.box-datepicker.grid-90, .box-datepicker.mobile-grid-90,
+.box-datepicker.grid-95, .box-datepicker.mobile-grid-95,
+.box-datepicker.grid-100, .box-datepicker.mobile-grid-100,
+.box-datepicker.grid-33, .box-datepicker.mobile-grid-33,
+.box-datepicker.grid-66, .box-datepicker.mobile-grid-66 {
+    float: none;
+    padding: 0;
+    text-align: right;
+}
+
+.box-combobox.grid-5, .box-combobox.mobile-grid-5,
+.box-combobox.grid-10, .box-combobox.mobile-grid-10,
+.box-combobox.grid-15, .box-combobox.mobile-grid-15,
+.box-combobox.grid-20, .box-combobox.mobile-grid-20,
+.box-combobox.grid-25, .box-combobox.mobile-grid-25,
+.box-combobox.grid-30, .box-combobox.mobile-grid-30,
+.box-combobox.grid-35, .box-combobox.mobile-grid-35,
+.box-combobox.grid-40, .box-combobox.mobile-grid-40,
+.box-combobox.grid-45, .box-combobox.mobile-grid-45,
+.box-combobox.grid-50, .box-combobox.mobile-grid-50,
+.box-combobox.grid-55, .box-combobox.mobile-grid-55,
+.box-combobox.grid-60, .box-combobox.mobile-grid-60,
+.box-combobox.grid-65, .box-combobox.mobile-grid-65,
+.box-combobox.grid-70, .box-combobox.mobile-grid-70,
+.box-combobox.grid-75, .box-combobox.mobile-grid-75,
+.box-combobox.grid-80, .box-combobox.mobile-grid-80,
+.box-combobox.grid-85, .box-combobox.mobile-grid-85,
+.box-combobox.grid-90, .box-combobox.mobile-grid-90,
+.box-combobox.grid-95, .box-combobox.mobile-grid-95,
+.box-combobox.grid-100, .box-combobox.mobile-grid-100,
+.box-combobox.grid-33, .box-combobox.mobile-grid-33,
+.box-combobox.grid-66, .box-combobox.mobile-grid-66 {
+    float: none;
+    padding: 0;
+    text-align: right;
+}
+
+label.grid-5, label.mobile-grid-5,
+label.grid-10, label.mobile-grid-10,
+label.grid-15, label.mobile-grid-15,
+label.grid-20, label.mobile-grid-20,
+label.grid-25, label.mobile-grid-25,
+label.grid-30, label.mobile-grid-30,
+label.grid-35, label.mobile-grid-35,
+label.grid-40, label.mobile-grid-40,
+label.grid-45, label.mobile-grid-45,
+label.grid-50, label.mobile-grid-50,
+label.grid-55, label.mobile-grid-55,
+label.grid-60, label.mobile-grid-60,
+label.grid-65, label.mobile-grid-65,
+label.grid-70, label.mobile-grid-70,
+label.grid-75, label.mobile-grid-75,
+label.grid-80, label.mobile-grid-80,
+label.grid-85, label.mobile-grid-85,
+label.grid-90, label.mobile-grid-90,
+label.grid-95, label.mobile-grid-95,
+label.grid-100, label.mobile-grid-100, label.grid-33,
+label.mobile-grid-33, label.grid-66, label.mobile-grid-66 {
+    float: none;
+    text-align: right;
+}
+
+.label.grid-5, .label.mobile-grid-5,
+.label.grid-10, .label.mobile-grid-10,
+.label.grid-15, .label.mobile-grid-15,
+.label.grid-20, .label.mobile-grid-20,
+.label.grid-25, .label.mobile-grid-25,
+.label.grid-30, .label.mobile-grid-30,
+.label.grid-35, .label.mobile-grid-35,
+.label.grid-40, .label.mobile-grid-40,
+.label.grid-45, .label.mobile-grid-45,
+.label.grid-50, .label.mobile-grid-50,
+.label.grid-55, .label.mobile-grid-55,
+.label.grid-60, .label.mobile-grid-60,
+.label.grid-65, .label.mobile-grid-65,
+.label.grid-70, .label.mobile-grid-70,
+.label.grid-75, .label.mobile-grid-75,
+.label.grid-80, .label.mobile-grid-80,
+.label.grid-85, .label.mobile-grid-85,
+.label.grid-90, .label.mobile-grid-90,
+.label.grid-95, .label.mobile-grid-95,
+.label.grid-100, .label.mobile-grid-100,
+.label.grid-33, .label.mobile-grid-33,
+.label.grid-66, .label.mobile-grid-66 {
+    float: none;
+    text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+    label.grid-5, label.mobile-grid-5,
+    label.grid-10, label.mobile-grid-10,
+    label.grid-15, label.mobile-grid-15,
+    label.grid-20, label.mobile-grid-20,
+    label.grid-25, label.mobile-grid-25,
+    label.grid-30, label.mobile-grid-30,
+    label.grid-35, label.mobile-grid-35,
+    label.grid-40, label.mobile-grid-40,
+    label.grid-45, label.mobile-grid-45,
+    label.grid-50, label.mobile-grid-50,
+    label.grid-55, label.mobile-grid-55,
+    label.grid-60, label.mobile-grid-60,
+    label.grid-65, label.mobile-grid-65,
+    label.grid-70, label.mobile-grid-70,
+    label.grid-75, label.mobile-grid-75,
+    label.grid-80, label.mobile-grid-80,
+    label.grid-85, label.mobile-grid-85,
+    label.grid-90, label.mobile-grid-90,
+    label.grid-95, label.mobile-grid-95,
+    label.grid-100, label.mobile-grid-100,
+    label.grid-33, label.mobile-grid-33, label.grid-66,
+    label.mobile-grid-66 {
+        float: none;
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    label.grid-5, label.mobile-grid-5, label.grid-10, label.mobile-grid-10, label.grid-15, label.mobile-grid-15, label.grid-20, label.mobile-grid-20, label.grid-25, label.mobile-grid-25, label.grid-30, label.mobile-grid-30, label.grid-35, label.mobile-grid-35, label.grid-40, label.mobile-grid-40, label.grid-45, label.mobile-grid-45, label.grid-50, label.mobile-grid-50, label.grid-55, label.mobile-grid-55, label.grid-60, label.mobile-grid-60, label.grid-65, label.mobile-grid-65, label.grid-70, label.mobile-grid-70, label.grid-75, label.mobile-grid-75, label.grid-80, label.mobile-grid-80, label.grid-85, label.mobile-grid-85, label.grid-90, label.mobile-grid-90, label.grid-95, label.mobile-grid-95, label.grid-100, label.mobile-grid-100, label.grid-33, label.mobile-grid-33, label.grid-66, label.mobile-grid-66 {
+        float: none;
+        text-align: right;
+    }
+}
+
+select.grid-5, select.mobile-grid-5, select.grid-10, select.mobile-grid-10, select.grid-15, select.mobile-grid-15, select.grid-20, select.mobile-grid-20, select.grid-25, select.mobile-grid-25, select.grid-30, select.mobile-grid-30, select.grid-35, select.mobile-grid-35, select.grid-40, select.mobile-grid-40, select.grid-45, select.mobile-grid-45, select.grid-50, select.mobile-grid-50, select.grid-55, select.mobile-grid-55, select.grid-60, select.mobile-grid-60, select.grid-65, select.mobile-grid-65, select.grid-70, select.mobile-grid-70, select.grid-75, select.mobile-grid-75, select.grid-80, select.mobile-grid-80, select.grid-85, select.mobile-grid-85, select.grid-90, select.mobile-grid-90, select.grid-95, select.mobile-grid-95, select.grid-100, select.mobile-grid-100, select.grid-33, select.mobile-grid-33, select.grid-66, select.mobile-grid-66 {
+    float: none;
+    text-align: left;
+}
+
+input.grid-5, input.mobile-grid-5, input.grid-10, input.mobile-grid-10, input.grid-15, input.mobile-grid-15, input.grid-20, input.mobile-grid-20, input.grid-25, input.mobile-grid-25, input.grid-30, input.mobile-grid-30, input.grid-35, input.mobile-grid-35, input.grid-40, input.mobile-grid-40, input.grid-45, input.mobile-grid-45, input.grid-50, input.mobile-grid-50, input.grid-55, input.mobile-grid-55, input.grid-60, input.mobile-grid-60, input.grid-65, input.mobile-grid-65, input.grid-70, input.mobile-grid-70, input.grid-75, input.mobile-grid-75, input.grid-80, input.mobile-grid-80, input.grid-85, input.mobile-grid-85, input.grid-90, input.mobile-grid-90, input.grid-95, input.mobile-grid-95, input.grid-100, input.mobile-grid-100, input.grid-33, input.mobile-grid-33, input.grid-66, input.mobile-grid-66,
+textarea.grid-5, textarea.mobile-grid-5, textarea.grid-10, textarea.mobile-grid-10, textarea.grid-15, textarea.mobile-grid-15, textarea.grid-20, textarea.mobile-grid-20, textarea.grid-25, textarea.mobile-grid-25, textarea.grid-30, textarea.mobile-grid-30, textarea.grid-35, textarea.mobile-grid-35, textarea.grid-40, textarea.mobile-grid-40, textarea.grid-45, textarea.mobile-grid-45, textarea.grid-50, textarea.mobile-grid-50, textarea.grid-55, textarea.mobile-grid-55, textarea.grid-60, textarea.mobile-grid-60, textarea.grid-65, textarea.mobile-grid-65, textarea.grid-70, textarea.mobile-grid-70, textarea.grid-75, textarea.mobile-grid-75, textarea.grid-80, textarea.mobile-grid-80, textarea.grid-85, textarea.mobile-grid-85, textarea.grid-90, textarea.mobile-grid-90, textarea.grid-95, textarea.mobile-grid-95, textarea.grid-100, textarea.mobile-grid-100, textarea.grid-33, textarea.mobile-grid-33, textarea.grid-66, textarea.mobile-grid-66 {
+    float: none;
+    padding: 0;
+    text-align: left;
+}
+
+.box-telerik-editor.grid-5, .box-telerik-editor.mobile-grid-5, .box-telerik-editor.grid-10, .box-telerik-editor.mobile-grid-10, .box-telerik-editor.grid-15, .box-telerik-editor.mobile-grid-15, .box-telerik-editor.grid-20, .box-telerik-editor.mobile-grid-20, .box-telerik-editor.grid-25, .box-telerik-editor.mobile-grid-25, .box-telerik-editor.grid-30, .box-telerik-editor.mobile-grid-30, .box-telerik-editor.grid-35, .box-telerik-editor.mobile-grid-35, .box-telerik-editor.grid-40, .box-telerik-editor.mobile-grid-40, .box-telerik-editor.grid-45, .box-telerik-editor.mobile-grid-45, .box-telerik-editor.grid-50, .box-telerik-editor.mobile-grid-50, .box-telerik-editor.grid-55, .box-telerik-editor.mobile-grid-55, .box-telerik-editor.grid-60, .box-telerik-editor.mobile-grid-60, .box-telerik-editor.grid-65, .box-telerik-editor.mobile-grid-65, .box-telerik-editor.grid-70, .box-telerik-editor.mobile-grid-70, .box-telerik-editor.grid-75, .box-telerik-editor.mobile-grid-75, .box-telerik-editor.grid-80, .box-telerik-editor.mobile-grid-80, .box-telerik-editor.grid-85, .box-telerik-editor.mobile-grid-85, .box-telerik-editor.grid-90, .box-telerik-editor.mobile-grid-90, .box-telerik-editor.grid-95, .box-telerik-editor.mobile-grid-95, .box-telerik-editor.grid-100, .box-telerik-editor.mobile-grid-100, .box-telerik-editor.grid-33, .box-telerik-editor.mobile-grid-33, .box-telerik-editor.grid-66, .box-telerik-editor.mobile-grid-66 {
+    float: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.box-fileupload.grid-5, .box-fileupload.mobile-grid-5, .box-fileupload.grid-10, .box-fileupload.mobile-grid-10, .box-fileupload.grid-15, .box-fileupload.mobile-grid-15, .box-fileupload.grid-20, .box-fileupload.mobile-grid-20, .box-fileupload.grid-25, .box-fileupload.mobile-grid-25, .box-fileupload.grid-30, .box-fileupload.mobile-grid-30, .box-fileupload.grid-35, .box-fileupload.mobile-grid-35, .box-fileupload.grid-40, .box-fileupload.mobile-grid-40, .box-fileupload.grid-45, .box-fileupload.mobile-grid-45, .box-fileupload.grid-50, .box-fileupload.mobile-grid-50, .box-fileupload.grid-55, .box-fileupload.mobile-grid-55, .box-fileupload.grid-60, .box-fileupload.mobile-grid-60, .box-fileupload.grid-65, .box-fileupload.mobile-grid-65, .box-fileupload.grid-70, .box-fileupload.mobile-grid-70, .box-fileupload.grid-75, .box-fileupload.mobile-grid-75, .box-fileupload.grid-80, .box-fileupload.mobile-grid-80, .box-fileupload.grid-85, .box-fileupload.mobile-grid-85, .box-fileupload.grid-90, .box-fileupload.mobile-grid-90, .box-fileupload.grid-95, .box-fileupload.mobile-grid-95, .box-fileupload.grid-100, .box-fileupload.mobile-grid-100, .box-fileupload.grid-33, .box-fileupload.mobile-grid-33, .box-fileupload.grid-66, .box-fileupload.mobile-grid-66 {
+    float: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.ui-spinner.grid-5, .ui-spinner.mobile-grid-5, .ui-spinner.grid-10, .ui-spinner.mobile-grid-10, .ui-spinner.grid-15, .ui-spinner.mobile-grid-15, .ui-spinner.grid-20, .ui-spinner.mobile-grid-20, .ui-spinner.grid-25, .ui-spinner.mobile-grid-25, .ui-spinner.grid-30, .ui-spinner.mobile-grid-30, .ui-spinner.grid-35, .ui-spinner.mobile-grid-35, .ui-spinner.grid-40, .ui-spinner.mobile-grid-40, .ui-spinner.grid-45, .ui-spinner.mobile-grid-45, .ui-spinner.grid-50, .ui-spinner.mobile-grid-50, .ui-spinner.grid-55, .ui-spinner.mobile-grid-55, .ui-spinner.grid-60, .ui-spinner.mobile-grid-60, .ui-spinner.grid-65, .ui-spinner.mobile-grid-65, .ui-spinner.grid-70, .ui-spinner.mobile-grid-70, .ui-spinner.grid-75, .ui-spinner.mobile-grid-75, .ui-spinner.grid-80, .ui-spinner.mobile-grid-80, .ui-spinner.grid-85, .ui-spinner.mobile-grid-85, .ui-spinner.grid-90, .ui-spinner.mobile-grid-90, .ui-spinner.grid-95, .ui-spinner.mobile-grid-95, .ui-spinner.grid-100, .ui-spinner.mobile-grid-100, .ui-spinner.grid-33, .ui-spinner.mobile-grid-33, .ui-spinner.grid-66, .ui-spinner.mobile-grid-66 {
+    float: none;
+    display: inline-block;
+    padding: 0;
+}
+
+    .ui-spinner.grid-5 .ui-spinner-input, .ui-spinner.mobile-grid-5 .ui-spinner-input, .ui-spinner.grid-10 .ui-spinner-input, .ui-spinner.mobile-grid-10 .ui-spinner-input, .ui-spinner.grid-15 .ui-spinner-input, .ui-spinner.mobile-grid-15 .ui-spinner-input, .ui-spinner.grid-20 .ui-spinner-input, .ui-spinner.mobile-grid-20 .ui-spinner-input, .ui-spinner.grid-25 .ui-spinner-input, .ui-spinner.mobile-grid-25 .ui-spinner-input, .ui-spinner.grid-30 .ui-spinner-input, .ui-spinner.mobile-grid-30 .ui-spinner-input, .ui-spinner.grid-35 .ui-spinner-input, .ui-spinner.mobile-grid-35 .ui-spinner-input, .ui-spinner.grid-40 .ui-spinner-input, .ui-spinner.mobile-grid-40 .ui-spinner-input, .ui-spinner.grid-45 .ui-spinner-input, .ui-spinner.mobile-grid-45 .ui-spinner-input, .ui-spinner.grid-50 .ui-spinner-input, .ui-spinner.mobile-grid-50 .ui-spinner-input, .ui-spinner.grid-55 .ui-spinner-input, .ui-spinner.mobile-grid-55 .ui-spinner-input, .ui-spinner.grid-60 .ui-spinner-input, .ui-spinner.mobile-grid-60 .ui-spinner-input, .ui-spinner.grid-65 .ui-spinner-input, .ui-spinner.mobile-grid-65 .ui-spinner-input, .ui-spinner.grid-70 .ui-spinner-input, .ui-spinner.mobile-grid-70 .ui-spinner-input, .ui-spinner.grid-75 .ui-spinner-input, .ui-spinner.mobile-grid-75 .ui-spinner-input, .ui-spinner.grid-80 .ui-spinner-input, .ui-spinner.mobile-grid-80 .ui-spinner-input, .ui-spinner.grid-85 .ui-spinner-input, .ui-spinner.mobile-grid-85 .ui-spinner-input, .ui-spinner.grid-90 .ui-spinner-input, .ui-spinner.mobile-grid-90 .ui-spinner-input, .ui-spinner.grid-95 .ui-spinner-input, .ui-spinner.mobile-grid-95 .ui-spinner-input, .ui-spinner.grid-100 .ui-spinner-input, .ui-spinner.mobile-grid-100 .ui-spinner-input, .ui-spinner.grid-33 .ui-spinner-input, .ui-spinner.mobile-grid-33 .ui-spinner-input, .ui-spinner.grid-66 .ui-spinner-input, .ui-spinner.mobile-grid-66 {
+        width: 100%;
+    }
+/******************************************************************************/
+/*combobox y datepicker width*/
+.grid-container .box-datepicker,
+.grid-container .box-combobox {
+    text-align: left;
+    border: 1px solid #8B8B8B;
+    padding: 0;
+    height: 19px;
+    margin: 0;
+	background-color: #fff;
+}
+
+.grid-container .box-datepicker input {
+    width: 90%;
+}
+
+.grid-container .box-datepicker input,
+.grid-container .box-combobox input {
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+
+@media screen and (max-width:1100px) {
+    .grid-container .box-datepicker input {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:745px) {
+    .grid-container .box-datepicker input {
+        width: 92%;
+    }
+}
+/**********************************************************************************/
+
+*:first-child + html .grid-container .box-combobox {
+    padding-right: 0;
+}
+/******************************************************************************/
+/*.grid-container .box-datepicker input,
+    .grid-container .box-combobox input {
+        width: 92%;
+        height: 100%;
+        margin: 0;
+        border: none;
+    }*/
+
+.grid-container .box-datepicker img {
+    right: 1px;
+    top: 1px;
+}
+
+*:first-child + html .grid-container .box-datepicker img {
+    right: 1px;
+    top: 1px;
+}
+
+*:first-child + html .grid-container .box-datepicker input {
+    height: 18px;
+}
+
+.grid-container .ui-buttonset {
+    display: inline-block;
+}
+
+.dataTables_paginate .ui-buttonset {
+    display: block;
+}
+
+.grid-container label,
+.grid-container li {
+    margin-right: 0;
+}
+
+.grid-container .ui-spinner.ui-widget-content {
+    margin-right: 0;
+}
+
+/******************************************************************************/
+/* COLLAPSIBLE CONTAINER */
+.collapsible-target {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .collapsible-target.hover {
+        text-decoration: underline;
+    }
+/******************************************************************************/
+/* MENSAJE SIMPLE */
+.box-simple-message {
+    border-top: 0 none;
+    border-bottom: 1px solid #2e6f9a;
+    border-left: 1px solid #2e6f9a;
+    border-right: 1px solid #2e6f9a;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #4eb24e;
+    color: #fff;
+    padding: 5px;
+    margin: 0 0 0 30%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    font: normal 14px/16px Arial;
+}
+/***************************************************************************/
+/*BOX AGRUPADOR*/
+.box-agrupador {
+    border: 1px solid #8b8b8b;
+    margin: 15px 0;
+    padding: 10px 10px 5px 0;
+}
+
+@media screen and (max-width:767px) {
+    .box-agrupador {
+        padding: 10px 10px 5px 10px;
+    }
+}
+/***************************************************************************/
+.box-combobox .ui-autocomplete-input{
+    width:100%; 
+    padding-right: 22px;
+    z-index: 0;
+}
+
+.box-combobox .btn-combobox{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+div.box-combobox-template-search > input.ui-autocomplete-input
+{
+    padding-left: 0;
+    padding-right: 0;
+}
